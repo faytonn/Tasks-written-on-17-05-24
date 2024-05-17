@@ -161,7 +161,7 @@ namespace working
             //Console.WriteLine(isSorted);
 
            /* TASK 11 -> MAX ILE MIN-IN YERIN DEYISHMEK */
-            int[] numbers = { 4, 5, 6, 7, 8, 9 };
+            int[] numbers = { 4, 1, 6, 7, 8, 9 };
             int i = 0;
            
             int max = 0;
@@ -178,11 +178,27 @@ namespace working
                     min = numbers[i];
                 }
                 i++;
-
+      }
+            i = 0;
+            while( i < numbers.Length)
+            {
+                if (numbers[i] == max)
+                {
+                    numbers[i] = min;
+                }
+               else if (numbers[i] == min)
+                {
+                    numbers[i] = max;
+                }
             }
-            Console.WriteLine(max);
-          
 
+            i = 0;
+
+            while (i < numbers.Length)
+            {
+                Console.Write(numbers[i] + ",");
+                i++;
+            }
 
         }
     }
