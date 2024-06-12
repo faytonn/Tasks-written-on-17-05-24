@@ -13,9 +13,9 @@
             
         }
 
-        public override string ShowInfo(string color, int year)
+        public override string ShowInfo()
         {
-            return $"Color: {color} \nYear: {year} \nBrand: {Brand} \nModel: {Model} \nMax Speed: {MaxSpeed}";
+            return $"Color: {Color} \nYear: {Year} \nBrand: {Brand} \nModel: {Model} \nMax Speed: {MaxSpeed}";
         }
     }
 }

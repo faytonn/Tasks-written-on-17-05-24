@@ -10,7 +10,7 @@
             Year = year;
         }
 
-        public abstract string ShowInfo(string color, int year);
+        public abstract string ShowInfo();
         
 
 
