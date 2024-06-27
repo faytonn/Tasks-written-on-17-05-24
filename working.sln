@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab task", "lab task\lab ta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentTaskLab", "StudentTaskLab\StudentTaskLab.csproj", "{D1B9A60F-D8EF-4D02-8C10-24225541F328}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20-06 lab", "20-06 lab\20-06 lab.csproj", "{2AA24917-F1D2-4587-9E74-05EBA93A9814}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20-06 lab", "20-06 lab\20-06 lab.csproj", "{2AA24917-F1D2-4587-9E74-05EBA93A9814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task2 20-06", "task2 20-06\task2 20-06.csproj", "{4D3A6772-0780-4BBC-B76A-C7A609BC0AE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task2 20-06", "task2 20-06\task2 20-06.csproj", "{4D3A6772-0780-4BBC-B76A-C7A609BC0AE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25-06", "24-06\25-06.csproj", "{695EBF97-A868-4857-B823-967CA6C8D830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25-06 task 2", "25-06 task 2\25-06 task 2.csproj", "{BEA8D902-25F6-4A3A-AB3B-DF19004854D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{4D3A6772-0780-4BBC-B76A-C7A609BC0AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D3A6772-0780-4BBC-B76A-C7A609BC0AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D3A6772-0780-4BBC-B76A-C7A609BC0AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695EBF97-A868-4857-B823-967CA6C8D830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695EBF97-A868-4857-B823-967CA6C8D830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695EBF97-A868-4857-B823-967CA6C8D830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695EBF97-A868-4857-B823-967CA6C8D830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA8D902-25F6-4A3A-AB3B-DF19004854D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA8D902-25F6-4A3A-AB3B-DF19004854D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA8D902-25F6-4A3A-AB3B-DF19004854D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA8D902-25F6-4A3A-AB3B-DF19004854D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
