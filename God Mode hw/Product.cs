@@ -18,6 +18,7 @@
 
         public override string ToString()
         {
-            return $"ID: {Id} \tName: {Name} \t";
+            return $"ID: {Id} \tName: {Name} \tStock: {Stock} \tPrice: {Price}";
+        }
     }
 }
