@@ -10,6 +10,8 @@ namespace God_Mode_hw
         public int Id { get; }
         private static int _id;
 
+
+
         public OnlineMarket(string name)
         {
             Id = ++_id;
@@ -40,6 +42,14 @@ namespace God_Mode_hw
                 Console.WriteLine("Product not found or your desired quantity exceeded our stock.");
             }
 
+        }
+
+        public void ShowProducts()
+        {
+            foreach (Product product in Products)
+            {
+                Console.WriteLine("ID: {0}, Name: {1}, Price: {2}, Stock: {3}", product.Id, product.Name, product.Price, product.Stock);
+            }
         }
 
         public void ShowCart()

@@ -5,7 +5,7 @@ namespace God_Mode_hw
     public class CartItemList : IEnumerable<CartItem>
     {
         private CartItem[] CartItems;
-        private int count;
+        private int Count;
 
         public IEnumerator<CartItem> GetEnumerator()
         {
@@ -23,9 +23,11 @@ namespace God_Mode_hw
             set { CartItems[i] = value; }
         }
 
+        public int Length
+        => Count;
         public void Add(CartItem cartItem)
         {
-            if (count == CartItems.Length)
+            if (Count == CartItems.Length)
             {
                 Array.Resize(ref CartItems, CartItems.Length + 1);
                 CartItems[^1] = cartItem;

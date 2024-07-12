@@ -1,13 +1,24 @@
-﻿namespace God_Mode_hw;
+﻿using System.Collections;
 
-public class ProductList
+namespace God_Mode_hw;
+
+public class ProductList : IEnumerable<Product>
 {
     private Product[] Products;
     private int Count;
+
+    public IEnumerator<Product> GetEnumerator()
+    {
+        return ((IEnumerable<Product>)Products).GetEnumerator();
+    }
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return Products.GetEnumerator();
+    }
+
     public ProductList()
     {
         Products = new Product[0];
-
     }
 
     public Product this[int i]
@@ -16,6 +27,8 @@ public class ProductList
         set { Products[i] = value; }
     }
 
+    public int Length
+        => Count;
     public void Add(Product product)
     {
         if (Count < Products.Length)
@@ -23,10 +36,7 @@ public class ProductList
             Array.Resize(ref Products, Products.Length + 1);
             Products[^1] = product;
         }
-        else
-        {
-            Console.WriteLine("Product list exceeded.");
-        }
+        
     }
 
     public void Remove(int id)

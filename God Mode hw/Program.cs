@@ -7,7 +7,7 @@ bool systemProcess = true;
 
 while (systemProcess)
 {
-    Console.WriteLine("\nChoose an option:");
+    Console.WriteLine("Choose an option:");
     Console.WriteLine("[1] Add Product to Market");
     Console.WriteLine("[2] Remove Product from Market");
     Console.WriteLine("[3] Add Product to Cart");
@@ -94,13 +94,18 @@ while (systemProcess)
 
             }
             Console.WriteLine("Total Price: ");
-            double totalPrice;
+            double totalPrice = 0;
             foreach(var cartItem in onlineMarket.Cart)
             {
-                totalPrice = cartItem.Price * cartItem.Quantity;
+                totalPrice = totalPrice + (cartItem.Price * cartItem.Quantity);
             }
             break;
-        case 6:
-
+        case 0:
+            Console.WriteLine("Terminating program...");
+            systemProcess = false;
+            break;
+        default:
+            Console.WriteLine("Invalid command, please try again");
+            break;
     }
 }
