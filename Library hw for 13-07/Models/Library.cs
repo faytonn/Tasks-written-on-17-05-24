@@ -14,7 +14,8 @@ namespace Library_hw_for_13_07.Models
 
         public void AddBook(Book book)
         {
-
+            Array.Resize(ref Books, Books.Length + 1);
+            Books[^1] = book;
         }
     }
 }
